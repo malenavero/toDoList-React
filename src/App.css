@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+  box-sizing: border-box;
+	outline: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  color: blueviolet;
+  text-shadow: 1px 1px 1px cyan;
+  margin: 50px;
+}
+/* App Styles */
+.container {
+  background-color: rgb(252, 206, 240);
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: 3px solid cyan;
+  align-items: center;
+}
+
+.list {  
+  width: 50%;  
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+
