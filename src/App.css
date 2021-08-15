@@ -9,6 +9,20 @@
   font-family: 'Courier New', Courier, monospace;
 }
 
+.main{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+/*   background-image: url("./img/patterns/1.jpg");
+ */ }
+
+.main.ice{
+/*   background-image: url("./img/patterns/6.jpg");
+ */}
+
 h1 {
   color: blueviolet;
   text-shadow: 1px 1px 1px cyan;
@@ -17,8 +31,8 @@ h1 {
 /* App Styles */
 .container {
   background-color: rgb(252, 206, 240);
-  height: 500px;
-  width: 500px;
+  height: 80%;
+  width: 80%;  
   display: flex;
   flex-direction: column;
   margin: 10px;
@@ -31,5 +45,4 @@ h1 {
   overflow: auto;
   margin-bottom: 20px;
 }
-
 

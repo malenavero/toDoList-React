@@ -6,9 +6,7 @@ function Item ({task}){
 
 
     function handleClick(e){  
-        console.log(done) 
         setDone((prevState) => !done);
-        console.log(done)
         done ? e.target.className = "done" : e.target.className = "toDo"
       }
     function handleDelete(e){

@@ -3,19 +3,18 @@
 .item {
     color: blueviolet;
     cursor: pointer;
-    text-transform: uppercase; 
-    
+    text-transform: uppercase;     
     display: flex;  
     justify-content: space-between;
     align-items: center;
     background-color: aquamarine; 
     margin: 10px; 
     padding: 10px;
-    font-size: 1em;
   }  
-  
+
   .toDo{ 
-    letter-spacing: 0.25em;      
+    letter-spacing: 0.25em; 
+    max-width: 70%;     
   }
 
   .toDo:hover{
@@ -30,6 +29,6 @@
   }
   .delete {
     color: rgb(43, 61, 226);
-    font-size: 0.6em ;
+    font-size: 0.6em ;   
     
   }
