@@ -7,7 +7,6 @@ import { useState } from "react";
 function App() {
 
   const [arrList, setArrList] = useState([])
-/*   const [done, setDone] = useState(false) */
 
 function handleEnter(e){
   if (e.key === "Enter"){
@@ -18,14 +17,12 @@ function handleEnter(e){
   }
 }
 
-function handleDelete(e){
-  e.target.parentElement.remove()
-}
+
 
 const listValue = {
   list: arrList,
   handleEnter: handleEnter,
-  handleDelete: handleDelete
+  
 }
   return (
     <ListProvider value={listValue}>

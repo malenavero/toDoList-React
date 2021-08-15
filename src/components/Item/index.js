@@ -1,11 +1,9 @@
-import {useContext, useState} from 'react'
-import ListContext from "../../contexts/ListContext"
+import {useState} from 'react'
 import "./style.css"
 
 function Item ({task}){
-    const data = useContext(ListContext);
     const [done, setDone] = useState(true)
-    const handleDelete = data.handleDelete;
+
 
     function handleClick(e){  
         console.log(done) 
@@ -13,6 +11,9 @@ function Item ({task}){
         console.log(done)
         done ? e.target.className = "done" : e.target.className = "toDo"
       }
+    function handleDelete(e){
+        e.target.parentElement.remove()
+    }
 
     return <>
         <li className="item">
