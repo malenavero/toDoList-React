@@ -4,13 +4,12 @@ import "./style.css"
 
 function Item ({task}){
     const data = useContext(ListContext);
-    const [done, setDone] = useState(false)
-   /*  const handleClick = data.onClick; */
+    const [done, setDone] = useState(true)
     const handleDelete = data.handleDelete;
 
     function handleClick(e){  
         console.log(done) 
-        setDone(prevState => !done);
+        setDone((prevState) => !done);
         console.log(done)
         done ? e.target.className = "done" : e.target.className = "toDo"
       }

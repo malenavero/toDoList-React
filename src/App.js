@@ -18,11 +18,6 @@ function handleEnter(e){
   }
 }
 
-/* function handleClick(e){   
-  setDone(prevState => !done);
-  done ? e.target.className = "done" : e.target.className = "toDo"
-} */
-
 function handleDelete(e){
   e.target.parentElement.remove()
 }
@@ -30,7 +25,6 @@ function handleDelete(e){
 const listValue = {
   list: arrList,
   handleEnter: handleEnter,
-  /* onClick: handleClick, */
   handleDelete: handleDelete
 }
   return (
