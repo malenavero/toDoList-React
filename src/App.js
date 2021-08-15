@@ -30,7 +30,7 @@ const listValue = {
   return (
     <ListProvider value={listValue}>
       <article className="container">
-        <h1>Market List</h1>
+        <h1>La listita de lxs pibxs</h1>
         <Input />
         <List />
       </article>
