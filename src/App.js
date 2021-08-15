@@ -7,7 +7,7 @@ import { useState } from "react";
 function App() {
 
   const [arrList, setArrList] = useState([])
-  const [done, setDone] = useState(false)
+/*   const [done, setDone] = useState(false) */
 
 function handleEnter(e){
   if (e.key === "Enter"){
@@ -18,10 +18,10 @@ function handleEnter(e){
   }
 }
 
-function handleClick(e){   
-  setDone(!done);
+/* function handleClick(e){   
+  setDone(prevState => !done);
   done ? e.target.className = "done" : e.target.className = "toDo"
-}
+} */
 
 function handleDelete(e){
   e.target.parentElement.remove()
@@ -30,7 +30,7 @@ function handleDelete(e){
 const listValue = {
   list: arrList,
   handleEnter: handleEnter,
-  onClick: handleClick,
+  /* onClick: handleClick, */
   handleDelete: handleDelete
 }
   return (
