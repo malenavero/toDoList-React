@@ -2,20 +2,19 @@ import {useState} from 'react'
 import "./style.css"
 
 function Item ({task}){
-    const [done, setDone] = useState(true)
+    const [done, setDone] = useState(false)
 
 
-    function handleClick(e){  
-        setDone((prevState) => !done);
-        done ? e.target.className = "done" : e.target.className = "toDo"
-      }
+    function handleClick(){  
+        setDone(prevState => !done);
+    }
     function handleDelete(e){
         e.target.parentElement.remove()
     }
 
     return <>
         <li className="item">
-            <p onClick={handleClick} className="toDo" >{task}</p>
+            <p className={done ? 'done' : 'toDo'} onClick={handleClick}>{task}</p>
             <p onClick={handleDelete} className="delete">delete</p>            
         </li>
     </>

@@ -12,6 +12,11 @@
     padding: 10px;
   }  
 
+  @media (max-width: 400px){
+    .item{
+      font-size: 0.5em;
+    }
+  }
   .toDo{ 
     letter-spacing: 0.25em; 
     max-width: 70%;     
